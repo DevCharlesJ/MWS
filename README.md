@@ -14,10 +14,12 @@ MWS incorporates a tkinter client application that displays current and historic
     
 ## Example Setup:
   1) run 'server.py'
-        A terminal should appear with the following text: "Ears on [<host.ip>:<port>]". If you see this, your server started successfully.
-        <host.ip> is your machine ip by default, while the default <port> is 9000. Which is the same for clients as well.
+  
+        A terminal should appear with the following text: "Ears on [{host.ip}:{port}]". If you see this, your server started successfully.
+        {host.ip} is your local machine ip by default, while the default {port} is 9000. Which is the same for clients as well.
         Please note that running multiple servers is untested.
   2) run 'client.py'
+  
         This will launch another terminal to register a new client to connect to the server.
         After you assign a username to the this client, a graphical interface with a white textbox and green "Send" button located at the bottom should appear.
         Looking back at the server terminal, you should also see that a [CONNECTION] to the server was made.
@@ -33,7 +35,7 @@ MWS incorporates a tkinter client application that displays current and historic
   5. Oldest messages are deleted every minute while no clients are connected.
   
 ## Send a Private Message:
-  Private messaging was added to simply test "client targetting", instead of just broadcasting a message to all targets. There's no real secrecy/security for this as of now. 
+  Private messaging was added to simply test "client targetting", instead of just broadcasting a message to all targets. There's no added secrecy/security for this as of now. 
   
   1. To send a private message, type " --> " right after the message you want to send, then type the username of the recipient.
   2. After pressing "Send", you should notice new details were included above the sent message that denote it as private.
