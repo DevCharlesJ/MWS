@@ -1,6 +1,11 @@
 # MWS
 MWS incorporates a tkinter client application that displays current and historic text messages to that client. 
 
+    Python modules used
+    socket
+    tkinter
+    pickle
+
 ## Features
     Message identification and timestamping
 
@@ -20,11 +25,12 @@ MWS incorporates a tkinter client application that displays current and historic
 
         You can create multiple clients by simply repeating the process.
         
-## Send a Message:
+## Messages:
   1. Afer connecting to a server, open the graphical interface respective to a client.
   2. Type the message you want to send into the white textbox located at the bottom of the interface.
   3. Press the green "Send" button to send the message
   4. You and other connected (and permitted) clients should see this message!
+  5. Oldest messages are deleted every minute while no clients are connected.
   
 ## Send a Private Message:
   Private messaging was added to simply test "client targetting", instead of just broadcasting a message to all targets. There's no real secrecy/security for this as of now. 

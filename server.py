@@ -1,4 +1,4 @@
-from http.client import HTTPResponse
+# from http.client import HTTPResponse      AN IDEA
 import socket
 import threading
 from time import sleep
@@ -6,7 +6,7 @@ from time import sleep
 from socketTools import *
 from COMMCODES import *
 
-from ClientObjects import Message, User
+from ClientObjects import Message
 
 
 if __name__ == '__main__':
@@ -128,7 +128,7 @@ if __name__ == '__main__':
         print(f"[CONNECTION LOST] {addr}")
 
     def messageCleaner(t:int):
-        """Removes oldest message every t seconds"""
+        """Removes oldest message every t seconds while no clients are connected"""
 
         while server_online:
             sleep(60)

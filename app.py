@@ -1,7 +1,6 @@
 from tkinter import *
 import threading
 from time import sleep
-from types import FunctionType
 
 from ClientObjects import Message
 from socketTools import *

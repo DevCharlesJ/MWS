@@ -1,7 +1,6 @@
 import socket
 import threading # Might be better to use custom threads
 import pickle
-from time import sleep
 
 from socketTools import *
 from COMMCODES import *

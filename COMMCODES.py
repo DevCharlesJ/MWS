@@ -5,4 +5,3 @@ REGISTER_USER = "(register_user)"
 GET_MESSAGES = "(get_messages)"
 SERVER_MSG = "(server_msg)"
 SERVER_DISCONNECT = "(server_disconnect)"
-
