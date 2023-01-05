@@ -1,7 +1,7 @@
 # MWS
 MWS incorporates a tkinter client application that displays current and historic text messages to that client. 
 
-    Python modules used
+## Python modules used
     socket
     tkinter
     pickle
